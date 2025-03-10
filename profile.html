@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Darker+Grotesque:wght@300..900&family=Domine:wght@400..700&family=Frijole&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Quicksand:wght@300..700&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/profile.css">
+
+    <!-- Include XLSX Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <ul class="nav-links">
+                    <img src="assets/logo.png" alt="Navraj Logo with word mark and text below it">
+                </ul>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <a href="profile.html" class="profile-icon">
+                        <i class="fa fa-user-circle"></i>
+                    </a>
+                    <a href="main.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                    <a href="about.html"><i class="fa fa-fw fa-user"></i> About</a>
+                    <a href="connect.html"><i class="fa fa-fw fa-envelope"></i> Connect</a>
+                    <a href="contact.html"><i class="fa fa-fw fa-phone"></i> Contact</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="profile-container">
+            <!-- Banner Section -->
+            <div class="banner">
+                <img id="bannerImage" src="assets/banner-default.jpg" alt="Banner Image">
+                <input type="file" id="bannerUpload" accept="image/*" hidden>
+                <button class="edit-btn edit-banner-btn" onclick="document.getElementById('bannerUpload').click();">
+                    <i class="fa fa-pencil"></i>
+                </button>
+            </div>
+
+
+
+
+
+
+
+            <!-- Profile Info Section -->
+            <div class="profile-info">
+                <!-- Profile Image -->
+                <div class="profile-pic-container">
+                    <img id="profileImage" class="profile-pic" src="assets/profile-default.jpg" alt="Profile Picture">
+                    
+                    <input type="file" id="profileUpload" accept="image/*" hidden>
+                    <button class="edit-btn profile-edit-btn" onclick="document.getElementById('profileUpload').click();">
+                        <i class="fa fa-camera"></i>
+                    </button>
+                </div>
+
+                <!-- Profile Details -->
+                <div class="profile-details">
+                    <h2>
+                        <span id="name">NavrajGhimire</span><br>
+                        <span id="pronoun">He/Him</span>
+                    </h2>
+                
+                    <p>
+                        <span id="courseName">Interactive Design</span> &nbsp;|&nbsp;
+                        <span id="currentYear">Second Year</span> &nbsp;|&nbsp;
+                        <span id="currentSemester">Second Semester</span>
+                    </p>
+                </div>
+                
+
+    <!-- About Section -->
+<div class="about-section">
+    <h3 style="color: rgb(26, 190, 236);">About:</h3>
+    <p style="color: white;">
+        With over 15 years of experience in the print industry, I have transitioned through diverse roles, including Print Production Management, Color Management, Client Servicing, overseeing press approvals for clients. Additionally, as a Technical Support Engineer, providing sales support for GMG and X-Rite products, fingerprinting of gravure press, and standardization of offset press.
+    </p>
+</div>
+
+
+    <!-- About Section -->
+    <div class="about-section">
+        <h3 style="color: rgb(26, 190, 236);"> Skills:</h3>
+        <p style="color: white;">
+            With over 15 years of experience in the print industry, I have transitioned through diverse roles, including Print Production Management, Color Management, Client Servicing, overseeing press approvals for clients. Additionally, as a Technical Support Engineer, providing sales support for GMG and X-Rite products, fingerprinting of gravure press, and standardization of offset press.
+        </p>
+    </div>
+    
+    <div class="about-section">
+        <h3 style="color: rgb(26, 190, 236);"> Major Projects:</h3>
+        <p style="color: white;">
+            With over 15 years of experience in the print industry, I have transitioned through diverse roles, including Print Production Management, Color Management, Client Servicing, overseeing press approvals for clients. Additionally, as a Technical Support Engineer, providing sales support for GMG and X-Rite products, fingerprinting of gravure press, and standardization of offset press.
+        </p>
+    </div>
+       
+    
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="contact-details">
+                <p><strong>Phone:</strong> +1 87 284 7248</p>
+                <p><strong>Email:</strong> connect@saitconnect.ca</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="main.html" aria-label="Home"><i class="fa fa-fw fa-home"></i></a>
+                <a href="about.html" aria-label="About"><i class="fa fa-fw fa-user"></i></a>
+                <a href="connect.html" aria-label="Connect"><i class="fa fa-fw fa-envelope"></i></a>
+                <a href="contact.html" aria-label="Contact"><i class="fa fa-fw fa-phone"></i></a>
+            </div>
+
+            <div class="footer-copyright-container">
+                <p>© SAIT Connect <span id="current-year"></span> | All Rights Reserved</p>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/navraj-ghimire-12b28059/" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.google.com/maps/place/Southern+Alberta+Institute+of+Technology" target="_blank" aria-label="Google Maps"><i class="fa fa-map-marker"></i></a>
+            </div>
+
+            <div class="contact-details">
+                <p><strong>Hours:</strong> Mon-Fri 9am-5pm</p>
+                <p><strong>Address:</strong> 1301 16 Avenue NW Calgary AB, T2M 0L4</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>

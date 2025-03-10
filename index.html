@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIT Connect</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- Loading Screen with Video -->
+    <div id="loading-screen">
+        <video autoplay muted id="loading-video">
+            <source src="assets/loading.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Login/Signup Form (Initially Hidden) -->
+        <div id="auth-container" class="hidden">
+            <div class="auth-box">
+                <h2>Welcome</h2>
+                <p>Please login or sign up to continue.</p>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button onclick="redirectToMain()">Login</button>
+                <button onclick="redirectToSignup()">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

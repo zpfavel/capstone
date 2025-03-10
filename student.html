@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="styles/student.css">
+</head>
+<body>
+
+    <div class="profile-container">
+        <!-- Student Photo -->
+        <img id="studentPhoto" src="assets/studentsphoto/default.jpg" alt="Student Photo">
+        
+        <!-- Student Details -->
+        <h2 id="studentName">N/A</h2>
+        <p><strong>Email:</strong> <span id="studentEmail">N/A</span></p>
+        <p><strong>Current Year:</strong> <span id="studentYear">N/A</span></p>
+        <p><strong>Semester:</strong> <span id="studentSemester">N/A</span></p>
+        
+        <!-- Buttons -->
+        <div class="buttons">
+            <button onclick="goBack()">Go Back</button>
+            <button id="connectButton">Connect</button>
+        </div>
+    </div>
+
+    <script src="js/student.js"></script>
+
+</body>
+</html>
