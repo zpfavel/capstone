@@ -1,0 +1,383 @@
+/* Global body styles */
+body {
+  margin: 0;
+  padding: 10px; 
+  font-family: "Quicksand", sans-serif, Arial, 'Times New Roman';
+  background-color: #000000; 
+}
+
+/* Header section (fixed and responsive) */
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Keeps header above other elements */
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+}
+
+.logo img {
+  height: 80px; /* Logo size */
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: rgb(255, 247, 0); /* Link color */
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 20px; 
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #363636;
+  color: #00ccff; /* Hover effect */
+}
+
+/* Responsive navbar for small screens */
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links {
+    width: 70%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block; /* Stack links vertically */
+  }
+}
+
+
+
+
+
+/* Reduce font size for pronoun */
+#pronoun {
+  font-size: 0.7em; /* Adjust the size as needed */
+  display: block; /* Ensures it appears on a new line */
+  margin-top: 2px; /* Fine-tune spacing between name and pronoun */
+  color: #ccc; /* Optional: Adjust the color for subtle styling */
+}
+
+
+/* About Section Styling */
+.about-section {
+  margin-top: 15px; /* Space between profile and about section */
+  font-size: 0.9em; /* Slightly smaller text for about section */
+  color: rgb(88, 200, 245); /* Change text color to red */
+}
+
+.about-section h3 {
+  font-weight: bold;
+  margin-bottom: 5px; /* Space below the heading */
+  color: rgb(255, 255, 255); /* Change text color to red */
+}
+
+
+
+/* LinkedIn-Style Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 250px; /* Banner height */
+  overflow: hidden;
+  border-radius: 8px 8px 0 0; /* Rounded corners */
+}
+
+.banner img {
+  width: 100%;
+  height: 125%;
+  object-fit: cover; /* Ensures image fits without distortion */
+}
+
+/* Edit Button for Banner (hidden by default) */
+.edit-banner-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  display: none; /* Hidden initially */
+}
+
+/* Show Edit Button on Hover */
+.banner:hover .edit-banner-btn {
+  display: block;
+}
+
+/* Profile Info Section (Image & Details) */
+.profile-info {
+  display: flex;
+  align-items: flex-start; /* Aligns items at the top */
+  margin-top: -75px; /* Overlaps banner */
+  padding-left: 20px; /* Space from the left */
+}
+
+/* Profile Picture Container */
+.profile-pic-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  margin-top: -50px; /* Adjust to move content below the banner */
+  position: relative;
+  z-index: 2;
+}
+
+.profile-details {
+  color: white; /* Make text white */
+  text-align: left;
+  margin-top: 20px; /* Space below the profile image */
+}
+
+.profile-pic-container {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 4px solid white; /* White border around profile image */
+  border-radius: 12px; /* Slightly rounded corners */
+}
+
+/* Edit Button for Profile Picture (hidden by default) */
+.profile-edit-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  display: none; /* Hidden initially */
+}
+
+/* Show Profile Edit Button on Hover */
+.profile-pic-container:hover .profile-edit-btn {
+  display: block;
+}
+
+/* User Information Section (Name, Pronouns, etc.) */
+.info-section {
+  margin-left: 20px; /* Space between profile image and text */
+}
+
+.info-section h2 {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 32px; /* Larger name size */
+  margin: 5px 0;
+}
+
+.info-section p {
+  margin: 5px 0;
+  font-family: 'Mulish', sans-serif;
+}
+
+/* Responsive Design for Profile Section */
+@media (max-width: 768px) {
+  .profile-info {
+    flex-direction: column; /* Stack profile image and details vertically */
+    align-items: center;
+    text-align: center;
+    margin-top: -50px;
+  }
+
+  .profile-pic-container {
+    width: 120px;
+    height: 120px; /* Smaller profile picture */
+  }
+
+  .info-section {
+    margin-left: 0; /* Reset margin for small screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer styles */
+footer {
+  background-color: rgb(0, 0, 0); 
+  color: rgb(255, 247, 0);
+  padding: 20px;
+}
+
+.contact-details strong {
+  color: #00ccff; 
+}
+
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.footer-links a {
+  color: rgb(255, 238, 0);
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a {
+  color: rgb(255, 238, 0);
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 24px; 
+  transition: color 0.3s ease;
+}
+
+.contact-details p {
+  margin: 5px 0;
+}
+
+
+.footer-links a:hover,
+.social-icons a:hover {
+  color: #00ccff;
+}
+
+/* Media query for mobile view */
+@media (max-width: 767px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links,
+  .social-icons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .contact-details {
+    margin-bottom: 20px;
+  }
+}
+
+/* Footer Fixed at Bottom */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000; /* Ensure it matches your theme */
+  color: white; /* Footer text color */
+  padding: 10px 0; /* Add padding for better appearance */
+  text-align: center;
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+/* Profile Icon Styling */
+.profile-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px; /* Space between Home and Profile button */
+  width: 30px; /* Outer circle size */
+  height: 30px; /* Outer circle size */
+  background-color: #00ccff; /* Outer circle color */
+  border-radius: 50%; /* Circular button */
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+/* Icon inside the Profile Button */
+.profile-icon i {
+  font-size: 50px; /* Actual profile icon size */
+  color: #000000; /* Icon color */
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.profile-icon:hover {
+  background-color: #0099cc; /* Darker shade on hover */
+}
+
+.profile-icon i:hover {
+  color: #f2ff00; /* Change icon color on hover */
+}
+
+/* 📱 Mobile Responsive Design */
+@media screen and (max-width: 768px) {
+  .profile-icon {
+    width: 50px; /* Smaller size for mobile */
+    height: 50px; /* Smaller size for mobile */
+  }
+
+  .profile-icon i {
+    font-size: 30px; /* Smaller icon size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile-icon {
+    width: 45px; /* Even smaller on very small screens */
+    height: 45px;
+  }
+
+  .profile-icon i {
+    font-size: 28px;
+  }
+}
